@@ -10,6 +10,17 @@ class Algorithm
         virtual int choosePosition(const char board[6][7], int depth) = 0;
 };
 
+class HumanPlayer : public Algorithm
+{
+    public:
+        int choosePosition(const char board[6][7], int depth)
+        {
+            int move;
+            cin >> move;
+            return move;
+        }
+};
+
 class MockAlgo : public Algorithm
 {
     public:
@@ -228,7 +239,7 @@ class MinMax : public Algorithm
             if (col < 0 || col >= 7 || board[5][col] != ' ') {
                 return false;
             }
-            for (int i = 5; i >= 0; --i) {
+            for (int i = 0; i <= 5; ++i) {
                 if (board[i][col] == ' ') {
                     board[i][col] = player;
                     return true;
@@ -270,15 +281,15 @@ public:
     }
 
     void playGame() {
-        MockAlgo player1;
+        HumanPlayer player1;
         MinMax player2;
 
         bool gameOver = false;
         int turn = 1; // Player 1 starts
-        int depth = 0; // Not used in MockAlgo, but included for compatibility
+        int depth = 10; // Not used in MockAlgo, but included for compatibility
 
         while (!gameOver) {
-            // printBoard();
+            printBoard();
             int col = (turn == 1) ? player1.choosePosition(board, depth) : player2.choosePosition(board, depth);
             if (col != -1 && makeMove(col, turn == 1 ? 'X' : 'O')) {
                 if (checkWin(turn == 1 ? 'X' : 'O')) {
@@ -313,20 +324,15 @@ private:
 
     bool makeMove(int col, char player) {
         if (col < 0 || col >= 7 || board[5][col] != ' ') {
+                return false;
+            }
+            for (int i = 0; i <= 5; ++i) {
+                if (board[i][col] == ' ') {
+                    board[i][col] = player;
+                    return true;
+                }
+            }
             return false;
-        }
-        for (int i = 5; i >= 0; --i) {
-            if (i == 0)
-            {
-                board[i][col] = player;
-                
-            }
-            if (board[i-1][col] != ' ') {
-                board[i][col] = player;
-                return true;
-            }
-        }
-        return false;
     }
 
     bool checkWin(char player) {
@@ -376,7 +382,7 @@ private:
 
     bool isBoardFull() {
         for (int j = 0; j < 7; ++j) {
-            if (board[0][j] == ' ') {
+            if (board[5][j] == ' ') {
                 return false;
             }
         }
