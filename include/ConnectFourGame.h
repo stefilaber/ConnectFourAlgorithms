@@ -9,11 +9,13 @@
 class ConnectFourGame {
 public:
     ConnectFourGame(int depth);
-    void playGame();
+    void playMultipleGames(int numGames);
 
 private:
     Board board;
     int depth;  // Depth for the MinMax and MCTS algorithms
+
+    int randomMove();  // Function to generate a random valid move
 };
 
 #endif // CONNECTFOURGAME_H

@@ -1,0 +1,158 @@
+Winner: MCTS (O)
+Winner: MCTS (O)
+Winner: MinMax (X)
+Winner: MCTS (O)
+Final board after game 1:
+X X   X X O O 
+O O   X O X X 
+X O   X O O O 
+O X   O O X X 
+O X O X X O O 
+O O X X X O X 
+
+Final board after game 2:
+O X   O X X O 
+X X   X X O X 
+O O   X O X O 
+O X O X O O X 
+X O X O X O O 
+O X O O O X X 
+
+Final board after game 3:
+    X X X     
+    O O X   X 
+X   O X O X O 
+O   X O X O O 
+O   X X X O X 
+O   O X X O O 
+
+Final board after game 4:
+O X   O X X O 
+X X   X X O X 
+O O   X O X O 
+O X O X O O X 
+X O X O X O O 
+O X O O O X X 
+
+Final board after game 5:
+O O   X X   O 
+X X   O O   X 
+O O O O O   O 
+X X X O O   X 
+X X O X X   X 
+O X X X O   O 
+
+Final board after game 6:
+X   X X   X X 
+O   O O   O O 
+X X X X   X X 
+O O X X   O O 
+O X O O   O X 
+O O X O   O X 
+
+Final board after game 7:
+              
+      X X     
+      O X   X 
+    X O O   O 
+    O X X O O 
+X   O X X O O 
+
+Final board after game 1:
+X   X X   X   
+X   O O   X   
+O   X X   O X 
+O   X X   O X 
+O O O O O X O 
+X X O X O O O 
+
+Final board after game 2:
+O X X X   O X 
+X O O X   X X 
+X X O O   O O 
+O O X X O X X 
+X O X O X O O 
+O O X O O X O 
+
+Final board after game 3:
+      X       
+      O       
+    O O       
+    X O       
+X   X X X X   
+X   O X O O O 
+
+Final board after game 4:
+              
+              
+              
+              
+    X X       
+X O O O O     
+
+Final board after game 5:
+X O X X   X   
+O X O X   X X 
+O X X O   O X 
+O O O X   O O 
+X O X O   X O 
+X X O X   O O 
+
+Total games: 5
+MinMax wins: 2
+MCTS wins: 3
+Draws: 0
+Average time per game: 14.754 seconds
+Average decision time for MinMax per game: 0.000877424 seconds
+Average decision time for MCTS per game: 14.7531 seconds
+Average decision time for MinMax per round: 6.74942e-05 seconds
+Average decision time for MCTS per round: 1.13486 seconds
+Final board after game 1:
+X   X X X   X 
+X   O O X   O 
+O   X O O O X 
+O   O O X X X 
+X O X X O O O 
+O X X X O O O 
+
+Final board after game 2:
+X X   O X X O 
+X X   X O O O 
+X X X X X X O 
+O O O X X O X 
+X O X O O X O 
+O O O X O O O 
+
+Final board after game 3:
+O O   X X   X 
+O X   X X   X 
+X O   O O   O 
+O X   O X   O 
+O X O X X   O 
+O O X X O   X 
+
+Final board after game 4:
+              
+              
+    O X X     
+O   X O X     
+O   O X X     
+O X O O X     
+
+Final board after game 5:
+      X       
+      O       
+  X O X O   O 
+  O O O X   X 
+O O X X X O X 
+X O O X O X X 
+
+Total games: 5
+MinMax wins: 2
+MCTS wins: 3
+Draws: 0
+Average time per game: 33.106 seconds
+Average decision time for MinMax per game: 0.0160227 seconds
+Average decision time for MCTS per game: 33.0899 seconds
+Average decision time for MinMax per round: 0.00106818 seconds
+Average decision time for MCTS per round: 2.20599 seconds
